@@ -21,8 +21,60 @@ a:hover { text-decoration: underline; }
   padding: 1.5rem 1.25rem 4rem;
 }
 .wrap.wide { max-width: 68rem; }
+.wrap.store { max-width: 52rem; }
 .hero { max-width: 36rem; margin-bottom: 2.6rem; }
 .hero h1 { font-size: 2.45rem; }
+.section-blurb {
+  color: var(--muted);
+  margin: 0 0 1.1rem;
+  max-width: 36rem;
+}
+.frames { margin: 0 0 2.6rem; }
+.frame {
+  display: flex;
+  gap: 1.15rem;
+  align-items: center;
+  padding: 1rem 0;
+  border-top: 1px solid var(--line);
+}
+.frame:last-child { border-bottom: 1px solid var(--line); }
+.thumbs {
+  display: flex;
+  gap: 0.4rem;
+  flex: 0 0 auto;
+}
+.thumbs img {
+  height: 8.6rem;
+  width: auto;
+  border-radius: 0.55rem;
+  border: 1px solid var(--line);
+  background: #000;
+  display: block;
+}
+.copy { min-width: 0; flex: 1; }
+.copy h3 {
+  font-size: 1.22rem;
+  font-weight: 600;
+  margin: 0 0 0.28rem;
+}
+.copy .line { margin: 0 0 0.45rem; color: var(--muted); }
+.copy .spec {
+  font-family: system-ui, sans-serif;
+  font-size: 0.78rem;
+  color: var(--muted);
+  margin: 0 0 0.7rem;
+}
+.copy .acts { margin: 0; }
+.copy .more {
+  font-family: system-ui, sans-serif;
+  font-size: 0.88rem;
+  margin-left: 0.85rem;
+  color: var(--muted);
+}
+@media (max-width: 640px) {
+  .frame { flex-direction: column; align-items: flex-start; }
+  .thumbs img { height: 7.4rem; }
+}
 .home {
   font-family: system-ui, sans-serif;
   font-size: 0.82rem;
