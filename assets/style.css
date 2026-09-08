@@ -51,6 +51,25 @@ a:hover { text-decoration: underline; }
   background: #000;
   display: block;
 }
+.thumbs.placeholder {
+  height: 8.6rem;
+  min-width: 7.2rem;
+  max-width: 9.5rem;
+  padding: 0.55rem 0.7rem;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--line);
+  border-radius: 0.55rem;
+  background: #14181b;
+  box-sizing: border-box;
+}
+.thumbs.placeholder span {
+  font-family: system-ui, sans-serif;
+  font-size: 0.72rem;
+  line-height: 1.35;
+  color: var(--muted);
+  text-align: center;
+}
 .copy { min-width: 0; flex: 1; }
 .copy h3 {
   font-size: 1.22rem;
@@ -74,6 +93,7 @@ a:hover { text-decoration: underline; }
 @media (max-width: 640px) {
   .frame { flex-direction: column; align-items: flex-start; }
   .thumbs img { height: 7.4rem; }
+  .thumbs.placeholder { height: 7.4rem; }
 }
 .home {
   font-family: system-ui, sans-serif;
