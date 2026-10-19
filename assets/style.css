@@ -51,6 +51,14 @@ a:hover { text-decoration: underline; }
   background: #000;
   display: block;
 }
+.thumbs.stack {
+  flex-direction: column;
+  width: 11.2rem;
+}
+.thumbs.stack img {
+  width: 100%;
+  height: auto;
+}
 .thumbs.placeholder {
   height: 8.6rem;
   min-width: 7.2rem;
@@ -94,6 +102,8 @@ a:hover { text-decoration: underline; }
   .frame { flex-direction: column; align-items: flex-start; }
   .thumbs img { height: 7.4rem; }
   .thumbs.placeholder { height: 7.4rem; }
+  .thumbs.stack { width: 100%; max-width: 22rem; }
+  .thumbs.stack img { height: auto; }
 }
 .home {
   font-family: system-ui, sans-serif;
